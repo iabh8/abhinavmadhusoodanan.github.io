@@ -1,7 +1,4 @@
 var audio = new Audio('assets/sentmessage.mp3');
-var contactString = "<div class='social'> <a target='_blank' href='tel:+918921561120'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>8921561120</label></div> </a> <a href='mailto:abh8navmadhusoodanan@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/iabh8'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/+918921561120'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/iabh8'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/me.abh8'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/abhinav-madhusoodanan-635176230/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
-var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Abhinav Resume.pdf</label></div><a href='assets/Abhinav.pdf' download='Abhinav_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
-var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823.4059855602005!2d75.57570312914794!3d11.93607459947132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4312ac5a013b1%3A0x6f3ff026533217a7!2sSnehasagaram%20House!5e1!3m2!1sen!2sin!4v1667106407390!5m2!1sen!2sin' class='map'></iframe></div><label class='add'><address> 'Snehasagaram'<br>Mattannur<br>Kannur, Kerala, INDIA 670702</address>";
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -72,40 +69,29 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Howdy 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Abhinav Madhusoodanan</a>.</span><br><br>I am a Computer Engineering student at <span class='bold'>College of Engineering, Poonjar. 👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
+                sendTextMessage("Welcome to,<br><br><span class='bold'><a class='alink'>TEAM UNITY</a></span><br><br><span class='bold'>where collaboration sparks excellence!</span><br><br>As part of the Sparkle Placement and Training Program, we unite diverse talents to achieve our shared goals with synergy and determination.<br><br><span class='bold'><a class='alink'>UNITED WE CAN!</a></span><br><br>Send <span class='bold'>'help'</span> to know more about us.<br>");
             }, 2000);
             break;
         case "help":
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'about'</span> - to know about this site</span>");
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about us...<br>e.g<br><span class='bold'>'members'</span> -to get our team members details <br><span class='bold'>'score'</span> - to get our team score in sparkle program<br><span class='bold'>'moto'</span> - to get our team moto<br><span class='bold'>'anthem'</span> - to get our team anthem<br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'about'</span> - to know about this site</span>");
             break;
-        case "resume":
-            sendTextMessage(resumeString);
+        case "score":
+            sendTextMessage("<span class='sk'>As of Sparkle placement and training program DAY 1 TEAM UNITY's score is <br><span class='bold'>1161</span>");
             break;
-        case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing B.Tech degree in <span class='bold'>Computer Science Engineering.</span><br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C<br>Python<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>Bootstrap</span><br><br>Favourite IDEs:<span class='bold'><br>Pycharm<br>VSCode</span>");
+        case "moto":
+            sendTextMessage("<span class='sk'>TEAM UNITY's moto is <br><br><span class='bold'>UNITED WE CAN!</span>");
             break;
-
-        case "education":
-            sendTextMessage("<span class='sk'>I am currently pursuing <span class='bold'>B.Tech</span> degree in <span class='bold'>Computer Science Engineering</span> from <span class='bold'>College of Engineering, Poonjar</span><br>Passing Year : <span class='bold'>2025</span><br><br>I am currently pursuing <span class='bold'>online degree</span> in <span class='bold'>Programming and Data Science</span> from <span class='bold'>IITM</span><br>Passing Year:<span class='bold'>2025</span><br><br>I have completed my Secondary school from <span class='bold'>Kendriya Vidyalaya Kannur</span><br>Passing Year: <span class='bold'>2021</span></span>");
+        case "anthem":
+            sendTextMessage("<span class='sk'>TEAM UNITY's anthem is <br><br><span class='bold'>In the heart of Unity Hub, where dreams ignite,Guiding paths with purpose, our future in sight.Addressing challenges with a sparkle so bright,Together we stand, our unity takes flight.</span>");
             break;
-
-        case "address":
-            sendTextMessage(addressString);
+        case "members":
+            sendTextMessage("<span class='sk'>TEAM UNITY's members are <br><br><span class='bold'>Sneha Shaji (C)</span> <br><span class='bold'>Sanisha (WC)</span> <br><span class='bold'>Abhinav Madhusoodanan</span> <br><span class='bold'>Smithin K</span> <br><span class='bold'>Nethran ES</span> <br><span class='bold'>Aishwarya CS</span> <br><span class='bold'>Abhinaya</span></span>");
             break;
         case "clear":
             clearChat();
             break;
         case "about":
-            sendTextMessage("🛠️💻 This portfolio website is built using HTML, CSS and JavaScript!<br><br>👨🏻‍💻 Designed and Developed by <a class='alink' target='_blank' href='https:\/\/instagram.com/me.abh8/'><span class='bold'>Abhinav Madhusoodanan</a> with ❤️</span>");
-            break;
-        case "contact":
-            sendTextMessage(contactString);
-            break;
-        case "projects":
-            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/iabh8'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
-            break;
-        case "new":
-            sendTextMessage(addressString);
+            sendTextMessage("<span class='sk'>This web app was created with the contribution of every team member! <br><br><span class='bold'>UNITED WE CAN!</span>");
             break;
         default:
             setTimeout(() => {
