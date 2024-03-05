@@ -82,7 +82,7 @@ function waitAndResponce(inputText) {
             sendTextMessage("<span class='sk'>TEAM UNITY's moto is <br><br><span class='bold'>UNITED WE CAN!</span>");
             break;
         case "anthem":
-            sendTextMessage("<span class='sk'>TEAM UNITY's anthem is <br><br><span class='bold'>In the heart of Unity Hub, where dreams ignite,Guiding paths with purpose, our future in sight.Addressing challenges with a sparkle so bright,Together we stand, our unity takes flight.</span>");
+            sendTextMessage("<span class='sk'>TEAM UNITY's anthem is <br><br><span class='bold'>Through trials we navigate, a resilient crew,Unity Hub, where aspirations renew.In the address of progress, we boldly stride,Sparkle in our endeavors, no goal denied.Harmony in purpose, a symphony we weave,Collective strength, in each other, we believe.No mountain too high, no challenge too grand,With unity as our guide, we'll conquer the land.In the heart of Unity Hub, where dreams ignite,Guiding paths with purpose, our future in sight.Addressing challenges with a sparkle so bright,Together we stand, our unity takes flight.</span>");
             break;
         case "members":
             sendTextMessage("<span class='sk'>TEAM UNITY's members are <br><br><span class='bold'>Sneha Shaji (C)</span> <br><span class='bold'>Sanisha (WC)</span> <br><span class='bold'>Abhinav Madhusoodanan</span> <br><span class='bold'>Smithin K</span> <br><span class='bold'>Nethran ES</span> <br><span class='bold'>Aishwarya CS</span> <br><span class='bold'>Abhinaya</span></span>");
